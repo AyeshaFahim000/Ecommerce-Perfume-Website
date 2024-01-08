@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us - Aroma World</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}nav {
+            background-color: #D8B4F8;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            border-bottom:1px solid black;
+        }
+        nav .item{
+            display: flex;
+            justify-content:center;
+        }
+        nav img {
+            width: 100px;
+            height: 100px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size:30px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover{
+            color: purple;
+        }
+
+
+
+.contact-us {
+    max-width: 800px;
+    margin: 37px auto;
+    padding: 68px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        
+        <img src="logo.png" alt="Logo" class="navlogo">
+        <div class="item">
+        <a href="home.php">Home</a>        
+        <a href="Aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="login.html.php">Log in</a>
+        
+</div>
+     
+    </nav>
+
+    <section class="contact-us">
+        <h1>Contact </h1>
+        <p>We'd love to hear from you! If you have any questions, feedback, or inquiries, please feel free to contact us using the form below:</p>
+
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Aroma World. All rights reserved.</p>
+    </footer>
+</body>
+</html>
